@@ -1,0 +1,29 @@
+
+Collection Api--
+
+Hierarchy-->Collection(Interface)->List(Interface, list Interface extends Collection)-> ArrayList(Class , ArrayList Implements List Interface)
+
+Use Arrays when you know the size - Arrays are faster compared to ArrayList
+
+Generics:
+
+Collection<Integer> values = new ArrayList<Integer>();-> Integer generic ...by default Object dataType;
+
+1.7 feature -- no need to mention dataType on rightSide (new ArrayList<>());
+
+Set Interface -- HashSet is the Class which implements Set interface.
+
+Set<Integer> nums =  new HashSet<>();
+
+Set doesnt contains duplicates . List may contain duplicates.
+
+Order in which elements are accessed is random.
+
+TreeSet -- Sorted format
+Set<Integer> set = new TreeSet<>();
+
+Map is an Interface -- HashMap Implements map interface.
+
+HashTable also implements Map Inteface.
+
+
