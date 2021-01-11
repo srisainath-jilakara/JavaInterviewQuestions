@@ -30,3 +30,60 @@ Generics -- TypeSafety is achieved
 
 List<Integer> list =  new ArrayList<>();(Only integer type).
 
+Class Container<T extends Number>--Can pass only Subclasses Of Number (Integer,Double and float etc).
+
+Collection is the Root Interface.
+
+Two ways of looping through the collection
+1. Iterator
+2. Enhanced For loop.
+Collection has an Iterator method.
+
+Iterator i = values.iterator();
+i.next();(Iterator is an Interface....... values.iterator - gives iterator object. )
+ 
+While(i.hasNext())--checks if there exists an element.
+
+for(Object i:values)
+  System.out.println(i);
+
+List Interface --  two add methods -- add(e) & add(i,e)---I is the index where you want to insert the element.
+
+Use Collection for simple elements. Sort Cannot be used as it doesnt maintain indexing.
+
+Use List for sorting as  it maintains indexing.
+
+List<Integer> arr = new ArrayList<>();
+
+values.forEach(System.out::println)--Stream API & Lambda Expression.
+
+Vector -- Implements List. capacity() - method.
+
+
+Vector --- Increases size by 100%
+ArrayList increases size by 50% 
+
+Therefore for memory management user ArrayList.
+
+Vector -- ThreadSafe
+
+ArrayList -- Not threadSafe ..
+Since Vector is threadSafe it is slow. ArrayList is Faster.
+
+LinkedList vs ArrayList--
+
+LinkedList -- Implements List Interface. 
+LinkedList is faster when an element needs to be added in middle,
+as we have to change prev & next of two elements
+
+Search is faster in ArrayList.
+
+Comparator -- Interface // method compare(int o1,int o2)-->
+ if(o1>o2)return 1(Exchange bits) 
+
+To Modilfy Sorting change Create a class Which implements Compartor Interface and
+Override the logic in Compare method.
+
+
+
+
