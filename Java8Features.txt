@@ -1,0 +1,12 @@
+Data encapsulation and Abstraction and their importance
+
+•	Encapsulation: Defined as wrapping of data under a single unit, mechanism which binds the code and the data it manipulates.
+•	It is a protective shield that prevents data from being accessed by the code outside this shield
+•	Encapsulation can be achieved by Declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables.
+
+
+•	Abstraction: It is the property by virtue of which only the essential details are displayed to the user, the trivial and non-trivial details are hidden
+
+•	Can also be defined as process of identifying only the required characteristics of an object and ignoring the irrelevant details
+
+•	The main purpose of abstraction is hiding the unnecessary details from the users. Abstraction is selecting data from a larger pool to show only relevant details of the object to the user. It helps in reducing programming complexity and efforts
