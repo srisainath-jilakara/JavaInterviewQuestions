@@ -84,6 +84,27 @@ Comparator -- Interface // method compare(int o1,int o2)-->
 To Modilfy Sorting change Create a class Which implements Compartor Interface and
 Override the logic in Compare method.
 
+Working of HashMap
+•	HashMap is part of Java Collection Framework which uses a technique called Hashing. It implements Map Interface and stores the data in pair of Key and Value.
+•	It uses an array and Linked list data structure internally for storing Key and value.
+Structure of HashMap node
+Class Node<K, V> {
+	Int Hash;
+	K key;
+	V value;
+	Node <K, V> next;
+}
+•	Equals (): It checks the equality of two objects. It compares the Key, whether they are equal or not. It can be overridden and if you override this method, you also need to override hashCode()  
+•	hashCode (): This is the method of Object class. It returns the memory reference of Object in integer form and the value received from this function is used as the bucket number.
+a.	hashCode of null is always ‘0’
+•	Buckets: Array of the node is called buckets. Each node has a data structure like a LinkedList. More than one node can share the same bucket. It may be different in capacity.
+Calculating Index:
+•	Index minimizes the size of the array. The Formula for calculating the index is:
+a.	Index = hashCode (Key)&(n-1) [n is the size of the array]
+Hash Collision:
+•	This is the case when the calculated index value is the same for two or more Keys. Let's calculate the hash code for another Key "Sunny." Suppose the hash code for "Sunny" is 63281940. To store the Key in the memory, we have to calculate index by using the index formula.
+a.	Index=63281940 & (16-1) = 4
+•	The value 4 is the computed index value where the Key will be stored in HashMap. In this case, equals () method check that both Keys are equal or not. If Keys are same, replace the value with the current value. Otherwise, connect this node object to the existing node object through the LinkedList. Hence both Keys will be stored at index 4.
 
 
 
