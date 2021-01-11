@@ -26,4 +26,7 @@ Map is an Interface -- HashMap Implements map interface.
 
 HashTable also implements Map Inteface.
 
+Generics -- TypeSafety is achieved
+
+List<Integer> list =  new ArrayList<>();(Only integer type).
 
