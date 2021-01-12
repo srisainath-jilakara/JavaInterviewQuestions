@@ -10,3 +10,13 @@ Data encapsulation and Abstraction and their importance
 •	Can also be defined as process of identifying only the required characteristics of an object and ignoring the irrelevant details
 
 •	The main purpose of abstraction is hiding the unnecessary details from the users. Abstraction is selecting data from a larger pool to show only relevant details of the object to the user. It helps in reducing programming complexity and efforts
+
+Can we DECLARE A CONSTRUCTOR TO BE PRIVATE?
+
+We can declare a constructor as private. If we declare a constructor as private then we won’t be able to create an object of the class. We can use this private constructor in Singleton Design Pattern
+Conditions for Private Constructor
+•	A private constructor does not allow a class to be subclassed.
+•	A private constructor does not allow to create an object outside the class.
+•	If all the constant methods are there in our class, we can use a private constructor.
+•	If all the methods are static then we can use a private constructor.
+•	If we try to extend a class which is having private constructor compile time error will occur.
